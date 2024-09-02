@@ -1,0 +1,78 @@
+root/
+├── contracts/
+│   ├── modules/                        # Основные модули функциональности
+│   │   ├── Token/
+│   │   │   ├── BloomexToken.sol        # Основной смарт-контракт токена
+│   │   │   └── Tokenomics.sol          # Контракт для управления токеномикой
+│   │   ├── Credit/
+│   │   │   ├── Credit.sol              # Контракт для кредитования
+│   │   │   └── CreditInterface.sol     # Интерфейс для кредитования
+│   │   ├── Insurance/
+│   │   │   ├── Insurance.sol           # Контракт для страхования
+│   │   │   └── InsuranceInterface.sol  # Интерфейс для страхования
+│   │   ├── Agriculture/
+│   │   │   ├── Agriculture.sol         # Контракт для агро модуля
+│   │   │   └── AgricultureInterface.sol# Интерфейс для агро модуля
+│   │   ├── Staking/
+│   │   │   ├── Staking.sol             # Контракт для стейкинга
+│   │   │   └── StakingInterface.sol    # Интерфейс для стейкинга
+│   │   ├── Swap/
+│   │   │   ├── Swap.sol                # Контракт для свапа
+│   │   │   └── SwapInterface.sol       # Интерфейс для свапа
+│   │   ├── Airdrop/
+│   │   │   ├── Airdrop.sol             # Контракт для айрдропа
+│   │   │   └── AirdropInterface.sol    # Интерфейс для айрдропа
+│   │   ├── BusinessTokenization/
+│   │   │   ├── BusinessTokenization.sol# Контракт для токенизации бизнеса
+│   │   │   └── BusinessTokenInterface.sol # Интерфейс для токенизации бизнеса
+│   │   └── SupplyChain/
+│   │       ├── SupplyChain.sol         # Контракт для токенизации цепочек поставок
+│   │       └── SupplyChainInterface.sol# Интерфейс для токенизации цепочек поставок
+│   ├── libraries/
+│   │   ├── SafeMath.sol                # Библиотека для безопасных математических операций
+│   │   └── DataStructures.sol          # Библиотека для структур данных
+│   └── interfaces/
+│       ├── IERC20.sol                  # Стандартный интерфейс ERC20
+│       └── IModule.sol                 # Общий интерфейс для всех модулей
+│
+├── scripts/
+│   ├── deploy/
+│   │   ├── deployToken.js              # Скрипт для деплоя токена
+│   │   ├── deployModules.js            # Скрипт для деплоя всех модулей
+│   │   └── initialSetup.js             # Скрипт начальной настройки проекта
+│   └── automation/
+│       ├── updateContracts.js          # Скрипт для автоматизации обновлений
+│       └── fetchData.js                # Скрипт для сбора данных
+│
+├── test/
+│   ├── unit/                           # Юнит тесты
+│   │   ├── token.test.js               # Тесты для токена
+│   │   ├── credit.test.js              # Тесты для кредитования
+│   │   └── insurance.test.js           # Тесты для страхования
+│   └── integration/                    # Интеграционные тесты
+│       ├── workflow.test.js            # Тесты рабочих процессов
+│       └── performance.test.js         # Тесты производительности
+│
+├── migrations/
+│   ├── 1_initial_migration.js          # Начальная миграция
+│   └── 2_deploy_modules.js             # Миграция для деплоя модулей
+│
+├── configs/
+│   ├── networkConfig.js                # Настройки сети
+│   └── security/
+│       └── auditConfig.js              # Конфигурация для аудита
+│
+├── docs/
+│   ├── README.md                       # Описание проекта
+│   ├── API.md                          # API документация
+│   ├── Contracts.md                    # Документация по контрактам
+│   └── WhitePaper.md                   # Белая книга проекта
+│
+├── .github/
+│   └── workflows/
+│       ├── ci.yml                      # GitHub Actions для CI
+│       └── cd.yml                      # GitHub Actions для CD
+│
+├── .env                                # Конфигурация переменных окружения
+├── .gitignore                          # Git игнорируемые файлы
+└── Dockerfile                          # Dockerfile для сборки проекта
