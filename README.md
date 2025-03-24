@@ -12,6 +12,7 @@ The goal is to build a **fully digital, decentralized infrastructure** — no in
 Website: https://www.bloomex.xyz
 
 Founder: Alina Kushnareva
+
 https://www.linkedin.com/in/alinakushnareva/
 
 ---
