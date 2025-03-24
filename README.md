@@ -10,7 +10,9 @@
 The goal is to build a **fully digital, decentralized infrastructure** — no intermediaries, full transparency.
 
 Website: https://www.bloomex.xyz
+
 Founder: Alina Kushnareva
+
 https://www.linkedin.com/in/alinakushnareva/
 
 ---
@@ -107,6 +109,9 @@ This project is licensed under the MIT License.
 ## Contact
 
 Founder: Alina Kushnareva
+
 https://www.linkedin.com/in/alinakushnareva/ 
+
 Website: www.bloomex.xyz
+
 Email: info@bloomex.xyz
