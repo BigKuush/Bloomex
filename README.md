@@ -108,7 +108,9 @@ This project is licensed under the MIT License.
 ## Contact
 
 Founder: Alina Kushnareva
+
 https://www.linkedin.com/in/alinakushnareva/ 
 
 Website: www.bloomex.xyz
+
 Email: info@bloomex.xyz
