@@ -30,7 +30,7 @@ contract FoodRescueNFT is ERC721URIStorage, Ownable {
         address indexed claimer
     );
 
-    constructor() ERC721("Bloomex Food Batch", "BFB") {}
+    constructor() ERC721("Bloomex Food Batch", "BFB") Ownable(msg.sender) {}
 
     function mintProductBatch(
         string memory productType,
@@ -60,7 +60,7 @@ contract FoodRescueNFT is ERC721URIStorage, Ownable {
     }
 
     function claimBatch(uint256 tokenId) external {
-        require(_exists(tokenId), "Token does not exist");
+        require(tokenId <= _tokenIds && tokenId > 0, "Token does not exist");
         ProductBatch storage batch = batches[tokenId];
         require(!batch.isClaimed, "Already claimed");
         require(block.timestamp <= batch.expirationTimestamp, "Expired batch");
@@ -70,7 +70,7 @@ contract FoodRescueNFT is ERC721URIStorage, Ownable {
     }
 
     function getBatch(uint256 tokenId) external view returns (ProductBatch memory) {
-        require(_exists(tokenId), "Token does not exist");
+        require(tokenId <= _tokenIds && tokenId > 0, "Token does not exist");
         return batches[tokenId];
     }
 }

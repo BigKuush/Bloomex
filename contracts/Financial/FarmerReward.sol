@@ -24,7 +24,7 @@ contract FarmerReward is Ownable {
     event RewardSet(uint256 indexed tokenId, uint256 amount);
     event RewardClaimed(address indexed farmer, uint256 indexed tokenId, uint256 amount);
 
-    constructor(address _stableToken) {
+    constructor(address _stableToken) Ownable(msg.sender) {
         stableToken = IERC20(_stableToken);
     }
 

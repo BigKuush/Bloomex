@@ -27,7 +27,7 @@ contract IDOInvestmentPool is Ownable {
     event Invested(uint256 poolId, address investor, uint256 amount);
     event Finalized(uint256 poolId, bool success);
 
-    constructor(address _stableToken) {
+    constructor(address _stableToken) Ownable(msg.sender) {
         stableToken = IERC20(_stableToken);
     }
 

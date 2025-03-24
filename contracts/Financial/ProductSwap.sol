@@ -27,7 +27,7 @@ contract ProductSwap is Ownable {
     event SwapConfirmed(uint256 indexed swapId, address buyer);
     event SwapCancelled(uint256 indexed swapId);
 
-    constructor(address _stableToken, address _foodNFT) {
+    constructor(address _stableToken, address _foodNFT) Ownable(msg.sender) {
         stableToken = IERC20(_stableToken);
         foodNFT = IERC721(_foodNFT);
     }

@@ -30,7 +30,7 @@ contract CreditIntegration is Ownable {
     event USDCDeposited(uint256 amount);
     event USDCWithdrawn(uint256 amount);
 
-    constructor(address _usdc, address _lendingPool) {
+    constructor(address _usdc, address _lendingPool) Ownable(msg.sender) {
         usdc = IERC20(_usdc);
         lendingPool = ILendingPool(_lendingPool);
     }

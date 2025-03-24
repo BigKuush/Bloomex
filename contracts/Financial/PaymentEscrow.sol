@@ -23,7 +23,7 @@ contract PaymentEscrow is Ownable {
     event EscrowConfirmed(uint256 indexed escrowId);
     event EscrowRefunded(uint256 indexed escrowId);
 
-    constructor(address _stableToken) {
+    constructor(address _stableToken) Ownable(msg.sender) {
         stableToken = IERC20(_stableToken);
     }
 
