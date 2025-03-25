@@ -3,8 +3,8 @@
 **Bloomex** is a blockchain platform built on **Arbitrum**, designed to optimize the agri-food industry through:
 
 - Transparent distribution of agricultural products (social initiative)  
-- Product sales and swaps via NFT  
-- IDO-style crowdfunding for farmers  
+- Digital exchange and sales of agricultural products via blockchain 
+- Direct decentralized funding for farmers  
 - Integration with DeFi protocols and AI-driven automation  
 
 The goal is to build a **fully digital, decentralized infrastructure** — no intermediaries, full transparency.
