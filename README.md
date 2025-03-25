@@ -20,7 +20,7 @@ https://www.linkedin.com/in/alinakushnareva/
 ## Project Architecture
 
 ### Phase 1 — Social Program (MVP)
-- `FoodRescueNFT.sol` — NFT representation of food batches with metadata  
+- `FoodRescue.sol` — NFT representation of food batches with metadata  
 - `VolunteerRewards.sol` — stablecoin-based reward system for volunteers  
 - `QualityRating.sol` — farmer and volunteer ratings based on verified actions  
 - `FarmerReward.sol` — subsidy logic for farmers participating in food donation programs  
@@ -28,7 +28,7 @@ https://www.linkedin.com/in/alinakushnareva/
 ### Phase 2 — Financial Layer
 - `ProductSwap.sol` — NFT-based swap system for product sales  
 - `PaymentEscrow.sol` — secure payment system between buyers and farmers  
-- `IDOInvestmentPool.sol` — direct IDO pools for decentralized farm funding  
+- `InvestmentPool.sol` — direct IDO pools for decentralized farm funding  
 
 ### Phase 3 — DAO Governance
 - `BloomexDAO.sol` — governance, arbitration, and funding distribution logic  
@@ -59,7 +59,7 @@ For the MVP stage, the system uses a **rule-based approach**, but it's structure
 bloomex-contracts/
 ├── contracts/             # Smart contracts (Solidity)
 │   ├── Social/            # Product and volunteer logic
-│   ├── Financial/         # Sales, IDO, lending
+│   ├── Financial/         # Sales, lending
 │   ├── DAO/               # Governance
 │   ├── Integrations/      # DeFi & NGO bridges
 ├── services/ai/           # Automation and AI (Node.js)
